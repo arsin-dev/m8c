@@ -11,7 +11,7 @@ INCLUDES = $(shell pkg-config --libs sdl2 libserialport)
 local_CFLAGS = $(CFLAGS) $(shell pkg-config --cflags sdl2 libserialport) -Wall -O2 -pipe -I.
 
 #Set the compiler you are using ( gcc for C or g++ for C++ )
-CC = gcc
+CC = clang
 
 #Set the filename extensiton of your C files (e.g. .c or .cpp )
 EXTENSION = .c
